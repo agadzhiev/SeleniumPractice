@@ -1,6 +1,8 @@
 package com.geekbrains.lesson4;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import lesson4.Cat;
+import lesson4.Functions;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

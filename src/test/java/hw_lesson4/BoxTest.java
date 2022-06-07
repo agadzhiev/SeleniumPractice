@@ -1,5 +1,7 @@
 package hw_lesson4;
 
+import lesson4.Box;
+import lesson4.ZeroBallsException;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
