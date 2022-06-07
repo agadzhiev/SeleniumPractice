@@ -108,9 +108,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-        <plugins>
-
-        </plugins>
     </build>
 
     <reporting>
