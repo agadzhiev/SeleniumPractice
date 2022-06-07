@@ -8,7 +8,7 @@ public class Triangle {
         }
 
         if (a+b<c || a+c<b || b+c<a){
-            System.out.println("Треугольника не сущесвтует!");
+            System.out.println("Треугольника не существует!");
         }
 
         double p = 0.5 * (a + b + c);

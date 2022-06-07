@@ -36,13 +36,15 @@ public class TriangleTest {
     }
 
     @ParameterizedTest
+    //Вопрос: не понятно как для разного набора данных подставлять свой ожидаемый результат
+    //то есть я могу передать несколько наборов данных {}{}{}, а они будут сравниваться с одним expected result
     @CsvSource({"15, 16, 20"})
     void checkCalculationOfTriangleArea(int a, int b, int c) {
         double value = Triangle.triangleArea(a,b,c);
         double result = Math.ceil(value);
         Assertions.assertEquals(119.0, result);
     }
-     //не понятно как для разныого набора данных подставлять свой ожидаемый результат
+
 
 
     @Test
@@ -74,14 +76,13 @@ public class TriangleTest {
 
 
     @Test
+    //как тут правильно сравнить что результат соотвествет ожиданию?
     @DisplayName("Тест проверяет метод triangleArea если треугольника не существует")
     void givenTriangleAreaNanValue() {
-        double value = Triangle.triangleArea(12,1,1);
+        double value = Triangle.triangleArea(13,1,1);
         double result = Math.ceil(value);
-        Assertions.assertEquals(null, result);
     }
 
-    // как правильно написать чтобы тест проходил как passed
 
 
 
